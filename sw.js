@@ -1,5 +1,5 @@
 /* Focus Timer service worker - offline cache */
-const CACHE = 'focus-timer-v2';
+const CACHE = 'focus-timer-1.2.0';
 const ASSETS = ['./', './index.html'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
